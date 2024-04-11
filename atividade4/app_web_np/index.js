@@ -7,35 +7,35 @@ const app = express()
 const PORT = 8080
 
 app.get('/', function(req, resp){
-    resp.send()
+    resp.send("hello word")
 })
 
 app.get('/somar/:a/:b', function(req, resp){
-    a = req.params.a
-    b = req.params.b
+    a = Number(req.params.a)
+    b = Number(req.params.b)
     c = a + b
-    resp.send(c)
+    resp.send(String(c))
 })
 
 app.get('/subtratir/:a/:b', function(req, resp){
-    a = req.params.a
-    b = req.params.b
-    c = parseInt(a) - parseInt(b)
-    resp.send(c)
+    a = Number(req.params.a)
+    b = Number(req.params.b)
+    c = a - b
+    resp.send(String(c))
 })
 
 app.get('/multiplicar/:a/:b', function(req, resp){
-    a = req.params.a
-    b = req.params.b
+    a = Number(req.params.a)
+    b = Number(req.params.b)
     c = a * b
-    resp.send(c)
+    resp.send(String(c))
 })
 
 app.get('/dividir/:a/:b', function(req, resp){
-    a = req.params.a
-    b = req.params.b
+    a = Number(req.params.a)
+    b = Number(req.params.b)
     c = a / b
-    resp.send(c)
+    resp.send(String(c))
 })
 
 
