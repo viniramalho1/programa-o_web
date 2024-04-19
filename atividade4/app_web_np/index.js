@@ -2,12 +2,32 @@ mat = require("./util/math.js")
 
 const express = require("express")
 
+const path = require("path")
+
 const app = express()
 
 const PORT = 8080
 
 app.get('/', function(req, resp){
-    resp.send("hello word")
+    resp.send(`
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+
+            <style>
+                h1 {
+                    color: red;
+                }
+            </style>
+        </head>
+        <body>
+            <h1>AdASDa</h1>
+        </body>
+        </html>
+        `)
 })
 
 app.get('/somar/:a/:b', function(req, resp){
