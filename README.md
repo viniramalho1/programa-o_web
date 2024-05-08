@@ -1,2 +1,2 @@
-# programa-o_web
+# programacao_web
 repositório de atividades da diciplina programação web
