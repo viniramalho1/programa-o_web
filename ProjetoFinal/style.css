@@ -1,0 +1,80 @@
+body {
+    background-color: #171C32;
+    color: #fff;
+}
+
+.navbar-custom {
+    background-color: #4a5cff; /* Cor de fundo da navbar */
+    padding: 15px;
+}
+.search-input {
+    border-radius: 10px 0 0 10px; /* Bordas arredondadas para o campo de pesquisa */
+    border: none;
+    padding: 10px 20px;
+    width: 100%;
+    margin: 0px;
+}
+.search-button {
+    border-radius: 0 10px 10px 0; /* Bordas arredondadas para o botão de pesquisa */
+    border: none;
+    background-color: #171C32;
+    color: #5865F2;
+    padding: 10px 20px;
+}
+.login-button {
+    border-radius: 25px;
+    background: linear-gradient(to right, #6c63ff, #3f3d56);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 15px;
+}
+.navbar-custom .form-inline {
+    flex-grow: 1;
+}
+
+.parking-lot {
+    background-color: #21263B;
+    border-radius: 10px;
+}
+
+.parking-slot {
+    height: 100px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.linha {
+    justify-content: center;
+    align-items: center;
+}
+
+.vaga {
+    padding: 0px;
+}
+
+.parking-spot::before {
+    content: 'P';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 0.8rem;
+}
+
+.available {
+    background-color: #28a745;
+}
+
+.occupied {
+    background-color: #dc3545;
+}
+.road {
+    width: 10px;
+    height: 500px;
+    background-color: #cccccc;
+    margin: 20px;
+}
